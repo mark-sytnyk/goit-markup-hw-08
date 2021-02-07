@@ -1,0 +1,39 @@
+.customer {
+  padding: 60px 0;
+}
+.customer-title {
+  margin: 0 0 50px;
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.customer-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  @include list(margin);
+}
+.customer-item {
+  margin: 15px;
+}
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 90px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  @include transition(border color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+.customer-icon {
+  fill: currentColor;
+}

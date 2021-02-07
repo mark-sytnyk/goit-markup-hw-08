@@ -1,0 +1,26 @@
+.contacts {
+  display: none;
+  color: $primery-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  & + .contacts {
+    margin-left: 50px;
+  }
+}
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}

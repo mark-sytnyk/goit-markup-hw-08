@@ -1,0 +1,18 @@
+.logo {
+  color: $title-text-color;
+  font-family: $sec-font-family;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  &-text {
+    color: $accent-color;
+  }
+  .footer & {
+    display: block;
+    margin: 0 0 20px;
+    text-align: center;
+    color: $primery-white-color;
+  }
+}

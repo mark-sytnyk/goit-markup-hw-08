@@ -1,0 +1,31 @@
+.hero {
+  padding: 118px 0;
+  background-color: #c4c4c4;
+  color: $primery-white-color;
+  text-align: center;
+}
+.overlay {
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/new/123.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-title {
+  margin: 0 auto 30px;
+  width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  @extend %button;
+  margin: 0 auto;
+}

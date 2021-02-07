@@ -1,0 +1,40 @@
+.feature-list {
+  @include list(margin);
+  margin: 0;
+}
+.feature {
+  padding: 60px 0;
+}
+.feature-item {
+  margin: 0 0 30px;
+  &:last-child {
+    margin: 0;
+  }
+}
+.feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin: 0 0 30px;
+  border-radius: 4px;
+}
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  background-position: center;
+}
+.feature-title {
+  margin: 30px 0 10px;
+  text-align: center;
+  color: $title-text-color;
+  font-size: $main-font-size;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-text {
+  margin: 0;
+}
