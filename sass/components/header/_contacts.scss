@@ -1,8 +1,16 @@
-.contacts {
+.contacts-container {
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
   display: none;
+  flex-direction: column;
+  margin-left: auto;
+}
+.contacts {
   color: $primery-text-color;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   @include transition(color);
@@ -11,7 +19,7 @@
     color: $accent-color;
   }
   & + .contacts {
-    margin-left: 50px;
+    margin-top: 10px;
   }
 }
 .icon-mail {

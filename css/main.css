@@ -311,7 +311,6 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 480px;
 }
 
 @media screen and (min-width: 480px) {
@@ -320,13 +319,26 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 .logo {
   color: #212121;
   font-family: Raleway, sans-serif;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .logo {
+    display: block;
+    padding: 16px 0;
+  }
 }
 
 .logo-text {
@@ -348,7 +360,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
 }
 
 header {
@@ -365,6 +376,12 @@ header {
   color: currentColor;
   background-color: transparent;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -395,6 +412,7 @@ header {
 .header-menu {
   display: none;
   position: absolute;
+  z-index: 2;
   padding: 48px 40px;
   top: 0;
   left: 0;
@@ -501,6 +519,9 @@ header {
 }
 
 .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -512,11 +533,20 @@ header {
   margin: margin;
   list-style: none;
   text-decoration: none;
-  margin: 0;
+  margin: 0 0 0 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .navigation__item {
   position: relative;
+  margin: 0 50px 0 0;
 }
 
 .navigation__item:last-child {
@@ -524,6 +554,7 @@ header {
 }
 
 .navigation-link {
+  display: block;
   padding: 32px 0;
   color: #212121;
   font-weight: 500;
@@ -558,11 +589,28 @@ header {
   border-radius: 2px;
 }
 
-.contacts {
+.contacts-container {
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.contacts {
   color: #757575;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -578,7 +626,7 @@ header {
 }
 
 .contacts + .contacts {
-  margin-left: 50px;
+  margin-top: 10px;
 }
 
 .icon-mail {

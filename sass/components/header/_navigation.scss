@@ -1,18 +1,24 @@
 .main-nav {
+  display: flex;
   align-items: center;
 }
 .navigation {
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
   display: none;
   @include list(margin);
-  margin: 0;
+  margin: 0 0 0 88px;
 }
 .navigation__item {
   position: relative;
+  margin: 0 50px 0 0;
   &:last-child {
     margin: 0;
   }
 }
 .navigation-link {
+  display: block;
   padding: 32px 0;
   color: $title-text-color;
   font-weight: 500;

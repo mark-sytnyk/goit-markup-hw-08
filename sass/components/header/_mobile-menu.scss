@@ -1,4 +1,7 @@
 .menu-button {
+  @media screen and(min-width:768px) {
+    display: none;
+  }
   display: flex;
   z-index: 7;
   margin-left: auto;
@@ -26,6 +29,7 @@
 .header-menu {
   display: none;
   position: absolute;
+  z-index: 2;
   padding: 48px 40px;
   top: 0;
   left: 0;

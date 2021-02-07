@@ -1,11 +1,14 @@
 .logo {
+  @media screen and(max-width:767.98px) {
+    display: block;
+    padding: 16px 0;
+  }
   color: $title-text-color;
   font-family: $sec-font-family;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
-
   &-text {
     color: $accent-color;
   }
