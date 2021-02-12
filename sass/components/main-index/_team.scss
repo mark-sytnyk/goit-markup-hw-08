@@ -1,6 +1,11 @@
 .team-list {
   @include list(margin);
   margin: 0;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .teams {
   background-color: #f5f4fa;

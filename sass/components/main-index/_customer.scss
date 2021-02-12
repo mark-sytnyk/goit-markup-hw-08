@@ -5,7 +5,7 @@
   margin: 0 0 50px;
   color: $title-text-color;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 33px;
   line-height: 1.17;
   text-align: center;
 }
@@ -19,6 +19,9 @@
   margin: 15px;
 }
 .customer-link {
+  @media screen and(min-width:768px) {
+    width: 226px;
+  }
   display: flex;
   justify-content: center;
   align-items: center;

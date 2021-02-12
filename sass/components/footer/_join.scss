@@ -1,6 +1,8 @@
 .join {
-  align-items: flex-start;
-  margin: 0 0 60px;
+  margin: 0 auto 60px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 }
 .join > p {
   margin: 0 0 20px;
@@ -12,7 +14,9 @@
 }
 .join-list {
   @include list(margin);
+  margin: 0;
   display: flex;
+  justify-content: center;
 }
 .join-link {
   display: flex;

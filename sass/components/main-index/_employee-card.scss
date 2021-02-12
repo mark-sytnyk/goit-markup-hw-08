@@ -1,4 +1,11 @@
 .employee-card {
+  @media screen and(max-width:480px) {
+    width: 450px;
+  }
+  @media screen and(min-width:768px) {
+    width: 354px;
+    margin: 15px;
+  }
   margin: 0 0 30px;
   background-color: $primery-white-color;
   font-size: 16px;
@@ -9,6 +16,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   &:nth-child(4) {
     margin: 0;
+    @media screen and(min-width:768px) {
+      margin: 15px;
+    }
   }
 }
 .employee-photo {
