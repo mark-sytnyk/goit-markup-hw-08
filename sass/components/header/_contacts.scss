@@ -2,24 +2,35 @@
   @media screen and(min-width:768px) {
     display: flex;
   }
+  @media screen and(max-width:1199.97px) {
+    flex-direction: column;
+  }
   display: none;
-  flex-direction: column;
   margin-left: auto;
 }
 .contacts {
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    & + .contacts {
+      margin-left: 30px;
+    }
+  }
   color: $primery-text-color;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  align-items: center;
   text-decoration: none;
   @include transition(color);
   &:hover,
   &:focus {
     color: $accent-color;
   }
-  & + .contacts {
-    margin-top: 10px;
+  @media screen and(max-width:1199.97px) {
+    & + .contacts {
+      margin-top: 10px;
+    }
   }
 }
 .icon-mail {

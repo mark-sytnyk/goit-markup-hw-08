@@ -1,5 +1,8 @@
 .customer {
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .customer-title {
   margin: 0 0 50px;
@@ -19,8 +22,11 @@
   margin: 15px;
 }
 .customer-link {
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:768px) and (max-width: 1199.97px) {
     width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
   display: flex;
   justify-content: center;

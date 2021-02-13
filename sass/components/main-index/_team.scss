@@ -8,6 +8,9 @@
   }
 }
 .teams {
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
   background-color: #f5f4fa;
   padding: 60px 0;
 }

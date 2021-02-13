@@ -1,6 +1,9 @@
 .footer__info {
   margin: 0 auto 60px;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 1200px) {
+    margin: 0 70px 0 0;
+  }
+  @media screen and(min-width:768px) and (max-width: 1199.97px) {
     margin: 0 165px 0 61px;
   }
 }

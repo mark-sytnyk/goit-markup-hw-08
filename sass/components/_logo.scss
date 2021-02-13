@@ -3,6 +3,10 @@
     display: block;
     padding: 16px 0;
   }
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
   color: $title-text-color;
   font-family: $sec-font-family;
   font-weight: bold;

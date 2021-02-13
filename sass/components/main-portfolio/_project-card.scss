@@ -2,14 +2,42 @@
   @include list(margin);
   position: relative;
   margin: 0;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
-.project__card--item:not(:last-child) {
-  margin-bottom: 30px;
+.project__card--item {
+  @media screen and(min-width:768px) {
+    margin: 15px;
+  }
+  &:not(:last-child) {
+    @media screen and(max-width:767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 .project__card--link {
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+  @media screen and(max-width:767px) {
+    width: 450px;
+  }
+  @media screen and(min-width:768px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 370px;
+  }
   display: block;
   outline: none;
   text-decoration: none;
+  height: 100%;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   @include transition(box-shadow);
   &:hover,
   &:focus {
@@ -19,6 +47,11 @@
   }
 }
 .project__description {
+  @media screen and(min-width:768px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
   position: relative;
   overflow: hidden;
 }
@@ -47,10 +80,10 @@
   color: $primery-white-color;
 }
 .project-signature {
+  @media screen and(min-width:768px) {
+    width: 100%;
+  }
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 .project-title {
   margin: 0 0 4px;

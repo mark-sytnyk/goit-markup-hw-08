@@ -1,10 +1,13 @@
 body {
-    color: $primery-text-color;
-    background-color: $primery-white-color;
-    font-family: $main-font-family;
-    font-style: $main-font-style;
-    font-weight: $main-font-weight;
-    font-size: $main-font-size;
-    line-height: $main-line-height;
-    letter-spacing: 0.03em;
-  }
+  color: $primery-text-color;
+  background-color: $primery-white-color;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: $main-font-weight;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  letter-spacing: 0.03em;
+}
+body.modal-open {
+  overflow: hidden;
+}

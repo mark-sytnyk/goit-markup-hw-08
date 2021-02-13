@@ -3,7 +3,9 @@
   display: flex;
 }
 .example {
-  display: none;
+  @media screen and (max-width: 1199.97px) {
+    display: none;
+  }
   padding-bottom: 94px;
 }
 .example-title {

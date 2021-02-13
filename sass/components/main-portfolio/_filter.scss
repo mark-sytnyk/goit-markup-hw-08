@@ -1,18 +1,28 @@
 .project {
   background-color: $primery-white-color;
   padding: 60px 0;
+  @media screen and(min-width:1200px) {
+    padding: 94px 0;
+  }
 }
 .buttom-list__item {
   margin-right: 8px;
-  margin-bottom: 15px;
-  &:nth-child(3) {
-    margin-right: 0;
+  @media screen and(max-width:767px) {
+    margin-bottom: 15px;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+    &:last-child {
+      margin: 0;
+    }
   }
-  &:nth-child(4) {
-    margin-bottom: 0;
-  }
-  &:last-child {
-    margin: 0;
+  @media screen and(min-width:768px) {
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 .filter-buttom {
@@ -44,4 +54,11 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0 0 40px;
+  @media screen and(min-width:768px) {
+    margin: 0 0 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 50px;
+  }
 }

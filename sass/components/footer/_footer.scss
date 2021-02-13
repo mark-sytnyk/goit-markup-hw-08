@@ -3,6 +3,9 @@
   padding: 60px 0;
 }
 .footer-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
