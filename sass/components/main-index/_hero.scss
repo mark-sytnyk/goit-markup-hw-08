@@ -1,4 +1,7 @@
 .hero {
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
   padding: 118px 0;
   background-color: #c4c4c4;
   color: $primery-white-color;
@@ -73,6 +76,11 @@
   }
 }
 .hero-title {
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
   margin: 0 auto 30px;
   width: 360px;
   font-weight: 900;

@@ -8,12 +8,18 @@
   }
 }
 .footer__info-addres {
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
   margin: 0 0 8px;
   text-align: center;
   color: $primery-white-color;
   font-style: normal;
 }
 .footer__info-contacts {
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
   display: block;
   margin: 0 0 8px;
   text-align: center;

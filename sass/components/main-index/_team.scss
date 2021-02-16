@@ -15,6 +15,10 @@
   padding: 60px 0;
 }
 .teams-title {
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin: 0 0 50px;
+  }
   margin: 0 0 30px;
   color: $title-text-color;
   font-weight: bold;

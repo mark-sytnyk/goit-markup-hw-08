@@ -17,6 +17,9 @@
     color: $accent-color;
   }
   .footer & {
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
     display: block;
     margin: 0 0 20px;
     text-align: center;
